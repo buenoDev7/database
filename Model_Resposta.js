@@ -11,6 +11,15 @@ const Resposta = connection.define('table_respostas0', {
             }
         }
     },
+    cidade: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        validate: {
+            notEmpty: {
+                msg: "O campo não pode ser vazio"
+            }
+        }
+    },
     corpoResposta: {
         type: Sequelize.TEXT,
         allowNull: false,
