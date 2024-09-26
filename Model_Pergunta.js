@@ -2,8 +2,8 @@ const Sequelize = require('sequelize');
 const connection = require('./db_connection')
 
 const Pergunta = connection.define('table_perguntas0', {
-    username: {
-        type: Sequelize.STRING,
+    telefone: {
+        type: Sequelize.INT,
         allowNull: false,
         validate: {
             notEmpty: {
