@@ -2,6 +2,15 @@ const Sequelize = require('sequelize');
 const connection = require('./db_connection')
 
 const Pergunta = connection.define('table_perguntas0', {
+    assunto: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        validate: {
+            notEmpty: {
+                msg: "O campo não pode ser vazio"
+            }
+        }
+    },
     username: {
         type: Sequelize.STRING,
         allowNull: false,
