@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const connection = require('./db_connection')
 
 const Pergunta = connection.define('table_perguntas0', {
-    assunto: {
+    username: {
         type: Sequelize.STRING,
         allowNull: false,
         validate: {
