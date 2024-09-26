@@ -22,3 +22,23 @@ int main() {
 
     return 0;
 }
+
+int main() {
+    int arrInt[] = {1, 2, 3, 4, 5};
+    float arrFloat[] = {1.5, 2.5, 3.5, 4.5, 5.5};
+
+    cout << "Maior inteiro: " << encontrarMaior(arrInt, 5) << endl;
+    cout << "Maior float: " << encontrarMaior(arrFloat, 5) << endl;
+
+    return 0;
+}
+
+int main() {
+    int arrInt[] = {1, 2, 3, 4, 5};
+    float arrFloat[] = {1.5, 2.5, 3.5, 4.5, 5.5};
+
+    cout << "Maior inteiro: " << encontrarMaior(arrInt, 5) << endl;
+    cout << "Maior float: " << encontrarMaior(arrFloat, 5) << endl;
+
+    return 0;
+}
