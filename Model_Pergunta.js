@@ -3,7 +3,7 @@ const connection = require('./db_connection')
 
 const Pergunta = connection.define('table_perguntas0', {
     idade: {
-        type: Sequelize.INT,
+        type: Sequelize.NUMBER,
         allowNull: false,
         validate: {
             notEmpty: {
@@ -12,7 +12,7 @@ const Pergunta = connection.define('table_perguntas0', {
         }
     },
     telefone: {
-        type: Sequelize.INT,
+        type: Sequelize.NUMBER,
         allowNull: false,
         validate: {
             notEmpty: {
